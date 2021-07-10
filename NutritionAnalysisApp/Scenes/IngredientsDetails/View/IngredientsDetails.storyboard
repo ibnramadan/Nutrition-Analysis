@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ingredients Details View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="IngredientsDetailsViewController" id="Y6W-OH-hqX" customClass="IngredientsDetailsViewController" customModule="NutritionAnalysisApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9z5-qc-DW0" userLabel="No Ingredients View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lL-in-Nyy">
+                                        <rect key="frame" x="169" y="415.5" width="76" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="3lL-in-Nyy" firstAttribute="centerX" secondItem="9z5-qc-DW0" secondAttribute="centerX" id="JlP-d5-Ft9"/>
+                                    <constraint firstItem="3lL-in-Nyy" firstAttribute="centerY" secondItem="9z5-qc-DW0" secondAttribute="centerY" id="v0r-S6-8Pk"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sFk-GX-Uxv" userLabel="Ingredients Container View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cD3-R0-nOA">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVE-mA-xgI">
+                                        <rect key="frame" x="0.0" y="752" width="414" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Fba-08-GjM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="Total Nutrition Facts">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="JVE-mA-xgI" secondAttribute="trailing" id="Ane-oc-oLm"/>
+                                    <constraint firstItem="cD3-R0-nOA" firstAttribute="top" secondItem="sFk-GX-Uxv" secondAttribute="top" id="BcK-il-vaU"/>
+                                    <constraint firstItem="cD3-R0-nOA" firstAttribute="leading" secondItem="sFk-GX-Uxv" secondAttribute="leading" id="MXW-3h-8eT"/>
+                                    <constraint firstAttribute="bottom" secondItem="JVE-mA-xgI" secondAttribute="bottom" constant="16" id="OEe-OI-Ft4"/>
+                                    <constraint firstItem="JVE-mA-xgI" firstAttribute="leading" secondItem="sFk-GX-Uxv" secondAttribute="leading" id="StQ-aI-wGQ"/>
+                                    <constraint firstItem="JVE-mA-xgI" firstAttribute="top" secondItem="cD3-R0-nOA" secondAttribute="bottom" constant="16" id="rik-CL-pFw"/>
+                                    <constraint firstAttribute="trailing" secondItem="cD3-R0-nOA" secondAttribute="trailing" id="vn2-GP-T7I"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sFk-GX-Uxv" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="7cJ-Jp-1dz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9z5-qc-DW0" secondAttribute="trailing" id="8GR-Zw-PHh"/>
+                            <constraint firstAttribute="bottom" secondItem="9z5-qc-DW0" secondAttribute="bottom" id="HIp-jJ-IoG"/>
+                            <constraint firstItem="sFk-GX-Uxv" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="NG2-ZP-a82"/>
+                            <constraint firstItem="9z5-qc-DW0" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Q2e-dU-umI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="sFk-GX-Uxv" secondAttribute="bottom" id="T61-mE-agI"/>
+                            <constraint firstItem="9z5-qc-DW0" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="ba7-XV-EPa"/>
+                            <constraint firstItem="sFk-GX-Uxv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vjH-35-lyO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ingredientsContainerView" destination="sFk-GX-Uxv" id="121-SG-I7E"/>
+                        <outlet property="ingredientsTableView" destination="cD3-R0-nOA" id="0rS-D1-NiT"/>
+                        <outlet property="showTotalFactsBtn" destination="JVE-mA-xgI" id="T8j-J9-9ZJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

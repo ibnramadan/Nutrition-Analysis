@@ -9,6 +9,8 @@ target 'NutritionAnalysisApp' do
   pod 'RxSwift'
   pod 'Alamofire'
   pod 'MBProgressHUD'
+  pod 'Toast-Swift'
+  pod 'ObjectMapper'
   # Pods for NutritionAnalysisApp
 
   target 'NutritionAnalysisAppTests' do

@@ -1,34 +1,42 @@
 PODS:
   - Alamofire (5.4.3)
   - MBProgressHUD (1.2.0)
+  - ObjectMapper (4.2.0)
   - RxCocoa (6.2.0):
     - RxRelay (= 6.2.0)
     - RxSwift (= 6.2.0)
   - RxRelay (6.2.0):
     - RxSwift (= 6.2.0)
   - RxSwift (6.2.0)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
   - MBProgressHUD
+  - ObjectMapper
   - RxCocoa
   - RxSwift
+  - Toast-Swift
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - MBProgressHUD
+    - ObjectMapper
     - RxCocoa
     - RxRelay
     - RxSwift
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 363809516254f77ee091b87923751e40d9322f04
+PODFILE CHECKSUM: 1df57baac060a4c56db16a6e08e15496c2c91c82
 
 COCOAPODS: 1.10.1
